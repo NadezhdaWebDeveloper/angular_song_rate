@@ -1,0 +1,29 @@
+{
+  "name": "angular_song_rate",
+  "version": "1.0.0",
+  "description": "The simple app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NadezhdaWebDeveloper/angular_song_rate.git"
+  },
+  "keywords": [
+    "angularjs"
+  ],
+  "author": "Nadezhda Kovaleva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NadezhdaWebDeveloper/angular_song_rate/issues"
+  },
+  "homepage": "https://github.com/NadezhdaWebDeveloper/angular_song_rate#readme",
+  "dependencies": {
+    "angular": "^1.6.1",
+    "bootstrap": "^4.0.0-alpha.6",
+    "lodash": "^4.17.4",
+    "underscore.string": "^3.3.4",
+    "font-awesome": "4.7.0"
+  }
+}
