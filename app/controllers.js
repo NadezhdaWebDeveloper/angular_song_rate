@@ -42,7 +42,8 @@ angular.module('myApp.controllers', [])
 			$scope.error = false;
 			$scope.songs.push({
 				artist: artist,
-				title: title
+				title: title,
+				score: 0
 			});
 			console.log($scope.songs);
 			$scope.newSong.title = '';
