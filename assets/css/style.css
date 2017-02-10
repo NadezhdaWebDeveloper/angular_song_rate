@@ -7,10 +7,10 @@
   text-decoration: none;
 }
 
-.rating .rating-highlight, .rating.rating-highlight:hover {
-  color: #F4914E;
+.rating .rating-highlight, .rating .rating-highlight:hover {
+  color: #F4914E !important;
 }
 
-.rating .rating-normal, .rating.rating-normal:hover {
-  color: #3C3C3C;
+.rating .rating-normal, .rating .rating-normal:hover {
+  color: #3C3C3C !important;
 }
