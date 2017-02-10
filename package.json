@@ -22,8 +22,6 @@
   "dependencies": {
     "angular": "^1.6.1",
     "bootstrap": "^4.0.0-alpha.6",
-    "lodash": "^4.17.4",
-    "underscore.string": "^3.3.4",
     "font-awesome": "4.7.0"
   }
 }

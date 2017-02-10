@@ -31,7 +31,9 @@
           </tr>
         </thead>
         <tbody>
-          <tr ng-repeat="song in songs">
+          <!-- track by $id($index) - remove $$hashkey from Angular ng-repeat 
+              to avoid $$hashkey duplication errors -->
+          <tr ng-repeat="song in songs track by $id($index)">
             <td>
               <div class="pull-left">
                 <strong>{{song.artist | json}}</strong><br />
@@ -67,17 +69,15 @@
         </div>
       </form>
       <!-- работа встроенного в angular js фильтра json -->
-      <pre>{{songs | json}}</pre>
-      <pre>{{newSong  | json}}</pre>
+      <!-- <pre>{{songs | json}}</pre>
+      <pre>{{newSong  | json}}</pre> -->
     </div>
 
     <script type="text/javascript" src="libs/angular/angular.min.js"></script>
-    <script type="text/javascript" src="libs/lodash/lodash.min.js"></script>
-    <script type="text/javascript" src="libs/underscore.string/dist/underscore.string.min.js"></script>
+
     <script type="text/javascript" src="app/app.js"></script>
     <script type="text/javascript" src="app/controllers.js"></script>
     <script type="text/javascript" src="app/services.js"></script>
-    <script type="text/javascript" src="app/filters.js"></script>
     <script type="text/javascript" src="app/directives.js"></script>
   </body>
 </html>

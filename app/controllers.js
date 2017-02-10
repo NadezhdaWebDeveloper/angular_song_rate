@@ -24,6 +24,7 @@ angular.module('myApp.controllers', [])
 	$scope.$watch('songs', function (newValue, oldValue) {
 		if (newValue !== oldValue) {
 			songService.put($scope.songs);
+			console.log($scope.songs);
 		}
 	}, true);
 
@@ -38,14 +39,12 @@ angular.module('myApp.controllers', [])
 			$scope.errorMsg = 'Enter name of the song'
 			return $scope.error = true;
 		}else{
-			console.log(artist + ' ' + title);
 			$scope.error = false;
 			$scope.songs.push({
 				artist: artist,
 				title: title,
 				score: 0
 			});
-			console.log($scope.songs);
 			$scope.newSong.title = '';
 			$scope.newSong.artist = '';
 		}
